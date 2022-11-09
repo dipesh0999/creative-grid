@@ -15,6 +15,12 @@
     size: 2px;
     margin-bottom: 20px;
 }
+.bar{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -503,8 +509,18 @@ a{
         margin-left: 0px;
         margin-right: 0px;
     }
+    .nav-1{
+        gap: 10px;
+    }
     .nav-2{
         display: none;
+    }
+    .bar{
+        display: block;
+        color: black;
+    }
+    .fa-bars{
+        display: block;
     }
     .text{
         font-weight: 700;
