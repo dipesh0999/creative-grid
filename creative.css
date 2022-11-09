@@ -975,6 +975,7 @@ a{
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
     .ft-shape{
         position: absolute;
