@@ -797,9 +797,8 @@ a{
         font-size: 15px;
     }
     .price{
-        width: 340px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        padding: 0px 20px;
         margin-bottom: 30px;
     }
     .pricing{
@@ -807,7 +806,6 @@ a{
     }
     .pricing-2{
         display: block;
-        padding: 0px 20px;
     }
     .price-title-2{
         font-weight: 700;
