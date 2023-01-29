@@ -127,14 +127,32 @@ a{
 .contain-text-4{
     display: none;
 }
-.contain-span{
+.contain-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: black;
+}
+.child-contain-2{
+    position: relative;
     color: #D63031;
     text-shadow: 0px 5px 0px #FFFFFF;
 }
-.contain-span-2{
+.child-contain-2::after{
+    content: '';
+    display: block;
+    background-color: #55EFC4;
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    z-index: -1;
+    top: 60px;
+    border-radius: 99px;
+    left: -2px;
+}
+.child-contain-3{
     display: none;
-    color: #D63031;
-    text-shadow: 0px 5px 0px #FFFFFF;
 }
 .contain-text-1{
     display: none;
@@ -550,6 +568,12 @@ a{
         height: 399px;
         top: -21px;
     }
+    .desktop--contain{
+        display: none;
+    }
+    .mobile.contain{
+        display: block;
+    }
     .back-contain-img-1{
         display: none;
     }
@@ -694,13 +718,17 @@ a{
         letter-spacing: 5px;
         
     }
+    .hero{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+    }   
     .info-text{
         font-size: 28px;
         margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
-        width: 356px;
-        margin-left: 10px;
+        width: 100%;
     }
     .info-span{
         color: #6C5CE7;
@@ -711,9 +739,8 @@ a{
     .info-para{
         display: flex;
         flex-wrap: wrap;
-        width: 348px;
+        width: 100%;
         font-size: 20px;
-        margin-left: 10px;
     }
     .flexbox{
         display: none;
@@ -722,14 +749,11 @@ a{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 10px;
-        gap: 30px;
+        justify-content: space-between;
     }
     .flex-info-2{
         width: 150px;
         height: 340px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .flex-icons{
         width: 52px;
@@ -772,10 +796,6 @@ a{
     .flex-link{
         font-size: 15px;
     }
-    .hero{
-        width: 100%;
-        margin-bottom: 30px;
-    }
     .price{
         width: 340px;
         margin-left: auto;
@@ -802,22 +822,18 @@ a{
     }
     .flex-price-2{
         height: 392px;
-        width: 300px;
+        width: 100%;
         padding: 20px;
         border-radius: 16px;
-        margin-left: auto;
-        margin-right: auto;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
         border-top: none;
         margin-bottom: 30px;
     }
     .flex-price-3{
         height: 392px;
-        width: 300px;
+        width: 100%;
         padding: 20px;
         border-radius: 16px;
-        margin-left: auto;
-        margin-right: auto;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
         border-top: none;
         margin-bottom: 30px;
